@@ -1,0 +1,47 @@
+.gallery{
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+
+  /* >> Here you can play with sizes, fractions, and columns; exemple:
+  grid-template-columns: 1fr 2fr 1fr 3fr 2fr 4fr */
+  
+  column-gap: 5px;
+
+  /* we can also use "grid-template-rows" here it can be super helpfull */
+  /* but in this exempel we just use grid-template-columns speacilly that we use img in our project */
+
+  list-style: none;
+  
+
+}
+
+.gallery img{
+
+  width: 100%;
+}
+
+li:nth-child(1){
+  grid-column: 1 /span 2;
+  grid-row: 1 /span 2;
+  z-index: 2;
+
+}
+li:nth-child(2){
+  grid-column: 2 /span 4;
+  grid-row: 2 /span 4;;
+  
+} 
+li:nth-child(3){
+  grid-column: 5 /span 2;
+  grid-row: 5 /span 2;
+  
+}
+li:nth-child(4){
+  grid-column: 3 /span 2;
+  grid-row: 3 /span 2;
+  transform: rotate(-45deg);
+  /* you can although use "opacity here" */
+
+  
+}
